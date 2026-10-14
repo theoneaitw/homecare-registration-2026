@@ -40,3 +40,29 @@
 .organizer-label{font-size:12px;line-height:1.6;letter-spacing:.08em;color:#829179;margin-bottom:8px}
 .organizer-names{font-size:15px;line-height:1.9;letter-spacing:.02em;color:var(--forest);overflow-wrap:anywhere}
 @media(max-width:600px){.footer-organizers{grid-template-columns:1fr;gap:24px}.organizer-label{font-size:12px}.organizer-names{font-size:15px}}
+
+/* Monochrome line arrows render consistently, including iOS. */
+.line-arrow{display:inline-block;width:1em;height:1em;min-width:1em;vertical-align:-.15em;flex-shrink:0}
+.header-cta .line-arrow,.mobile-bottom-bar .line-arrow{width:18px;height:18px}
+.button .line-arrow{width:22px;height:22px}
+.carousel-controls .line-arrow{width:20px;height:20px}
+/* Mobile opening: title over the wall, people clear in the middle. */
+@media(max-width:600px){
+ .site-header{height:64px;padding-inline:22px;gap:12px}
+ .site-header .brand{gap:8px}.site-header .brand-mark{width:26px;height:31px}
+ .site-header .brand>span{font-size:16px;letter-spacing:.08em}.site-header .brand small{font-size:5px;letter-spacing:.12em;margin-top:4px}
+ .header-cta{font-size:10px;min-height:34px;padding:6px 10px;gap:8px}.header-cta>span{display:flex}
+ .menu-toggle{width:24px;height:40px;gap:6px}.menu-toggle span{width:21px}.mobile-menu{top:64px}
+ .hero{height:clamp(780px,110svh,850px);min-height:780px;max-height:850px}
+ .hero-image{object-position:83% 50%}
+ .hero-shade{background:linear-gradient(180deg,#09231c94 0%,#09231c55 22%,#09231c08 32%,#09231c0d 48%,#09231cb8 67%,#09231cf2 100%),linear-gradient(90deg,#09231c38,#09231c08 65%)}
+ .hero-content{padding-top:87px;animation:none}
+ .hero-eyebrow{font-size:9px;letter-spacing:.12em;gap:10px;line-height:1.5}.hero-eyebrow .small-line{width:18px}
+ .hero h1{font-size:clamp(43px,11.5vw,49px);line-height:1.22;letter-spacing:.025em;margin:12px 0 0}
+ .hero-subtitle{font-size:16px;letter-spacing:.05em;line-height:1.6;margin-top:9px}
+ .hero-description{position:absolute;left:22px;right:22px;bottom:224px;margin:0;font-size:12px;line-height:1.9;letter-spacing:.02em;color:#f0f0e7}
+ .hero .button{position:absolute;left:22px;right:22px;bottom:150px;min-height:52px;padding:15px 18px;font-size:12px;gap:14px}
+ .hero-bottom{bottom:43px;padding-top:19px;gap:16px}
+ .hero-date{padding-top:20px;gap:9px}.hero-date strong{font-size:32px}.hero-date .date-city{font-size:11px}.hero-date>span:last-child{font-size:9px}
+ .hero-date-divider{height:43px}.hero-image-note{bottom:11px}
+}
