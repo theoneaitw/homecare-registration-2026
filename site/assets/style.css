@@ -33,3 +33,10 @@
 .coorganizer-label{flex-shrink:0;font-size:10px;letter-spacing:.08em;color:#aebba8}
 @media(max-width:850px){.agenda-layout{grid-template-columns:1fr;gap:32px}.agenda-intro{position:static}}
 @media(max-width:600px){.agenda-list-head{display:none}.agenda-row{grid-template-columns:1fr;gap:8px;padding:22px 0}.agenda-row>time{font-size:16px}.agenda-row h4{font-size:19px;line-height:1.75}.agenda-row p{font-size:16px;line-height:1.8}.agenda-break h4{font-size:18px}.footer-coorganizers{font-size:12px;gap:20px}.coorganizer-label{font-size:10px}}
+
+/* Shared organizer hierarchy on every viewport. */
+.footer-organizers{display:grid;grid-template-columns:1fr;gap:24px;padding-top:0;min-width:0}
+.organizer-group{min-width:0;text-align:left}
+.organizer-label{font-size:12px;line-height:1.6;letter-spacing:.08em;color:#829179;margin-bottom:8px}
+.organizer-names{font-size:15px;line-height:1.9;letter-spacing:.02em;color:var(--forest);overflow-wrap:anywhere}
+@media(max-width:600px){.footer-organizers{grid-template-columns:1fr;gap:24px}.organizer-label{font-size:12px}.organizer-names{font-size:15px}}

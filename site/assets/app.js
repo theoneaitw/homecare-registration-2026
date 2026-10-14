@@ -34,14 +34,14 @@ function showErrors(errors) {
     error.hidden = false;
     form.querySelectorAll(`[name="${name}"]`).forEach((input) => {
       input.setAttribute('aria-invalid', 'true');
-      input.setAttribute('aria-describedby', `error-${name}${name === 'age' ? ' age-note' : ''}`);
+      input.setAttribute('aria-describedby', `error-${name}${name === 'age_band' ? ' age-note' : ''}`);
     });
   }
 }
 function formValues() {
   const data = new FormData(form);
   return {
-    session_id: String(data.get('session_id') || ''), name: String(data.get('name') || '').trim(), age: String(data.get('age') || ''),
+    session_id: String(data.get('session_id') || ''), name: String(data.get('name') || '').trim(), age_band: String(data.get('age_band') || ''),
     organization: String(data.get('organization') || '').trim(), profession: String(data.get('profession') || ''),
     email: String(data.get('email') || '').trim(), phone: String(data.get('phone') || '').trim(),
     consent: data.get('consent') === 'on', website: String(data.get('website') || ''),
@@ -107,7 +107,7 @@ form.addEventListener('submit', async (event) => {
     return;
   }
   if (!apiBase) { alertMessage(PREPARING_MESSAGE); return; }
-  const payload = { ...values, age: Number(values.age) };
+  const payload = { ...values };
   attempt = submissionAttempt(attempt, payload, () => crypto.randomUUID());
   pending = true;
   fields.disabled = true;
