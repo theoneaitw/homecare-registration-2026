@@ -66,3 +66,12 @@
  .hero-date{padding-top:20px;gap:9px}.hero-date strong{font-size:32px}.hero-date .date-city{font-size:11px}.hero-date>span:last-child{font-size:9px}
  .hero-date-divider{height:43px}.hero-image-note{bottom:11px}
 }
+
+/* A quiet editorial account of how we learn with homecare teams. */
+.field-story{display:grid;grid-template-columns:.85fr 1.15fr;gap:76px;margin-top:76px;padding:48px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.field-story-heading{min-width:0}.field-story-heading h3{font-size:32px;line-height:1.6;letter-spacing:.045em;margin:20px 0 22px}.field-story-heading>p:last-child{font-size:13px;line-height:2.2;color:var(--muted);max-width:310px}
+.field-story-steps{list-style:none;padding:0;margin:0;min-width:0}.field-story-steps li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.field-story-steps li:first-child{padding-top:0}.field-story-steps li:last-child{padding-bottom:0;border:0}
+.field-step-number{font-family:Georgia,serif;font-style:italic;font-size:14px;line-height:1.8;color:#8b9a7b}.field-story-steps h4{font-size:16px;font-weight:500;line-height:1.8;letter-spacing:.03em;margin:0 0 9px}.field-story-steps p{font-size:12px;line-height:2;color:var(--muted)}
+.takeaway-label{font-family:var(--serif);font-size:17px;line-height:1.8;letter-spacing:.045em;margin-top:48px}.takeaway-label+.pillars{margin-top:24px;padding-top:28px}
+@media(max-width:850px){.field-story{grid-template-columns:1fr;gap:28px;margin-top:54px;padding:36px 0}.field-story-heading h3{font-size:30px;margin:16px 0}.field-story-heading>p:last-child{max-width:520px}.field-story-steps{max-width:none}}
+@media(max-width:600px){.field-story{margin-top:42px;padding:30px 0;gap:26px}.field-story-heading h3{font-size:27px;line-height:1.65;letter-spacing:.035em}.field-story-heading>p:last-child{font-size:12px;line-height:2.1}.field-story-steps li{grid-template-columns:25px minmax(0,1fr);gap:12px;padding:22px 0}.field-story-steps h4{font-size:16px;line-height:1.75}.field-story-steps p{font-size:12px;line-height:2}.field-step-number{font-size:12px;line-height:2.3}.takeaway-label{font-size:15px;margin-top:34px}.takeaway-label+.pillars{margin-top:20px;padding-top:0}}
